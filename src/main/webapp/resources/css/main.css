@@ -1,0 +1,261 @@
+body {
+	background: url(../img/site-background.png) no-repeat center top / cover;
+	font-family: Arial;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #15353b;
+}
+
+header {
+	/*height: 164px;*/
+	box-sizing: border-box;
+}
+
+p {
+	color: white;
+	font-size: 18px;
+	font-family: Arial;
+	text-align: justify;
+	margin: 0;
+}
+
+a {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	color: white;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+    margin: 0;
+}
+
+.li-menu{
+	display: inline;
+	padding-left: 30px;
+}
+
+.li-fallOut {
+	display: block;
+}
+
+.li-fallOut:hover{
+
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	color: #B49470;
+}
+
+h1{
+	color: white;
+	font-size: 25px;
+}
+
+h2 {
+	color: white;
+	font-size: 18px;
+}
+
+h3 {
+	color: white;
+	font-size: 16px;
+}
+
+/*Убираем обводку для button*/
+button {
+    border: none;
+}
+
+/*Убираем обводку для input*/
+input {
+	outline: none;
+}
+
+@media (max-width: 991px) {
+	.main-logo-text {
+		font-size: 16px;
+	}
+}
+
+main {
+    height: 734px;
+    /*border: 2px solid red;*/
+}
+
+
+table {
+	display: block;
+	max-height: 600px;
+	overflow: auto;
+	color: white;
+	text-align: center;
+
+}
+
+.main-logo {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: Miama Nueva;
+	font-size: 22px;
+	color: white;
+}
+
+.menu__item{
+	padding-right: 16px;
+}
+
+.menu__item a {
+    font-size: 16px;
+}
+
+.main-menu {
+    margin-left: 8px;
+}
+
+.main-menu a {
+    margin-left: 10px;
+}
+
+.navigation-menu {
+	background-color: #6e0d25;
+}
+
+.section-page{
+	display: block;
+	height: 700px;
+	margin: 0 auto;
+	margin-top: 20px;
+	/*border: 2px solid red;*/
+}
+
+footer {
+	display: block;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+
+.logoForLogin {
+	/*text-align: center;*/
+	font-family: Miama Nueva;
+	font-size: 22px;
+	color: white;
+}
+
+/*Форма для ввода данных*/
+input[type="text"],input[type="password"],input[type="repeatPasswordassword"],input[type="email"], input[type="number"]{
+	background: none;
+	border-width: 2px;
+	border-color: #bababa;
+	border-style: solid;
+	border-radius: 10px;
+	width: 100%;
+	height:48px;
+	font-size: 18px;
+	/*margin-bottom: 25px;*/
+	padding-left: 10px;
+	color: white;
+}
+
+/*Загорается форма (Логин и пароль) при навидении курсора*/
+.lp-input input:hover{
+	box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+output {
+	color: white;
+}
+
+/*Загорается кнопка Входа при навидении курсора*/
+.in-submit:hover{
+	transition: all 0.5s;
+	background: #980b25;
+	color: white;
+}
+
+/*------Стили для загорания иконки------*/
+
+.backlight {
+	opacity: 0.3;
+}
+
+.backlight:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+/*-------------------------------------*/
+
+/*----------CheckBox стили----------*/
+
+/*Скрываем старый checkbox*/
+input[type=checkbox] {
+	display: none;
+}
+
+label {
+	font-size: 14px;
+	color: white;
+	margin: 0;
+}
+
+label::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-width: 2px;
+	border-color: #bababa;
+	border-style: solid;
+	margin-right: 6px;
+	background-color: #152e3b;
+	/*Плавная смена элемента*/
+	transition: 0.2s;
+}
+
+/*С помощью "+" мы обращаемся к следующему объекту*/
+input[type="checkbox"]:checked + label::before {
+	background-color: #980b25;
+}
+/*-----------------------------------*/
+
+
+/*---------Стили для Button---------*/
+
+.in-submit {
+	border-top-left-radius: 10px;
+  	border-top-right-radius: 10px;
+  	border-bottom-right-radius: 10px;
+  	border-bottom-left-radius: 10px;
+  	background-color: #976d49;
+  	height: 52px;
+  	color: white;
+	width: 100%;
+  	font-size: 18px;
+}
+
+/*----------------------------------*/
+
+
+/*---------Свойство для кнопки Вверх----------*/
+
+#toTop {
+	width:30px;
+	/*border:1px solid #ccc;*/
+	background: url(../img/Up.png) no-repeat center top / cover;
+	text-align:center;
+	padding:30px;
+	position:fixed;
+	bottom:30px; /* отступ кнопки от нижнего края страницы*/
+	right:10px;
+	cursor:pointer;
+	display:none;
+}
+
+/*--------------------------------------------*/
